@@ -1,0 +1,18 @@
+:root {
+	--color-primary: #1c1e53;
+	--color-secondary: #fcd980;
+
+	--color-white: #fff;
+	--color-black: #000;
+	--color-dark: #282938;
+	--color-light: #eef4fa;
+}
+
+body {
+	--bs-body-font-family: 'Poppins', sans-serif;
+}
+
+a,
+button {
+	transition: all 0.3s ease-in-out;
+}
