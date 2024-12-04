@@ -1,50 +1,104 @@
-# React + TypeScript + Vite
+# **TechManager Academy** 🎓💼
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **TechManager Academy** é uma plataforma de capacitação para gestores de
+tecnologia, com foco em liderança, inovação e transformação digital. Este
+projeto é parte da disciplina **Desenvolvimento Web 1** do **Curso de Gestão de
+Tecnologia** do **IFPR - Campus Pinhais**. 📚✨
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **🛠️ Tecnologias Utilizadas**
 
-## Expanding the ESLint configuration
+- **React** ⚛️
+- **Vite** ⚡
+- **TypeScript** 🟦
+- **CSS** 🎨
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## **🚀 Como Rodar o Projeto Localmente**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### **Pré-requisitos**
+
+- **Node.js** (recomendado: v16 ou superior) 🌐
+- **NPM** ou **Yarn** 📦
+
+---
+
+### **1. Clone o Repositório**
+
+```bash
+git clone https://github.com/seu-usuario/techmanager-academy.git
+cd techmanager-academy
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### **2. Instale as Dependências**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+#### Com NPM
+
+```bash
+npm install
 ```
+
+#### Ou com Yarn
+
+```bash
+yarn install
+```
+
+---
+
+### **3. Inicie o Servidor de Desenvolvimento**
+
+#### Com NPM
+
+```bash
+npm run dev
+```
+
+#### Ou com Yarn
+
+```bash
+yarn dev
+```
+
+O projeto estará disponível em: [http://localhost:5173](http://localhost:5173)
+🌐
+
+---
+
+## **📄 Scripts Disponíveis**
+
+- **`npm run dev` / `yarn dev`**: Inicia o servidor de desenvolvimento.
+- **`npm run build` / `yarn build`**: Cria a versão de produção.
+- **`npm run preview` / `yarn preview`**: Pré-visualiza a build de produção.
+
+---
+
+## **📁 Estrutura do Projeto**
+
+```bash
+techmanager-academy/
+├── public/              # Arquivos estáticos
+├── src/                 # Código-fonte principal
+│   ├── @components/     # Componentes reutilizáveis
+│   │   └── Button/
+│   │       ├── Button.tsx
+│   │       ├── Button.css
+│   │       └── index.ts
+│   ├── @pages/          # Páginas do projeto
+│   │   └── Home.tsx
+│   ├── main.css         # Arquivo de estilos globais
+│   └── main.tsx         # Arquivo de entrada
+├── vite.config.ts       # Configuração do Vite
+└── package.json         # Dependências e scripts
+```
+
+---
+
+## **📄 Licença**
+
+Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](./LICENSE)
+para mais detalhes.
