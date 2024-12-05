@@ -1,0 +1,106 @@
+.home-hero {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	padding: 120px 0;
+}
+
+.home-hero figure {
+	display: block;
+	text-align: right;
+	margin: 0 auto;
+	padding-left: 40px;
+}
+
+.home-hero figure img {
+	display: inline-block;
+	margin: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+.home-hero article h2 {
+	color: var(--color-white);
+	font-size: 42px;
+	font-weight: 600;
+	letter-spacing: 0.005em;
+	line-height: 1.6;
+	margin: 0 0 16px;
+}
+
+.home-hero article p {
+	color: var(--color-white);
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.home-hero nav {
+	margin-top: 40px;
+}
+
+.home-hero .button-default {
+	align-items: center;
+	background: var(--color-secondary);
+	border: 1px solid var(--color-secondary);
+	border-radius: 4px;
+	color: #282938;
+	display: flex;
+	font-size: 16px;
+	font-weight: 500;
+	gap: 8px;
+	height: 54px;
+	justify-content: center;
+	letter-spacing: 0.01em;
+	padding: 0 32px;
+	text-decoration: none;
+}
+
+.home-hero .button-default:hover {
+	background: transparent;
+	color: var(--color-secondary);
+}
+
+.home-hero .button-default.block {
+	width: 100%;
+}
+
+.home-hero .button-default.transparent {
+	background: transparent;
+	border: none;
+	color: var(--color-white);
+	padding: 0;
+}
+
+.home-hero .button-default.transparent:hover {
+	background: transparent;
+	color: var(--color-secondary);
+}
+
+@media (max-width: 992px) {
+	.home-hero {
+		padding: 80px 0;
+	}
+
+	.home-hero figure {
+		text-align: center;
+		margin: 0 auto;
+		padding: 80px 0 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.home-hero {
+		padding: 40px 8px;
+	}
+
+	.home-hero article h2 {
+		font-size: 28px;
+	}
+
+	.home-hero .button-default {
+		font-size: 14px;
+		padding: 0 16px;
+		width: 100%;
+	}
+}

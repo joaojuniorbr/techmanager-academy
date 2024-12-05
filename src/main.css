@@ -16,3 +16,8 @@ a,
 button {
 	transition: all 0.3s ease-in-out;
 }
+
+img {
+	height: auto;
+	max-width: 100%;
+}

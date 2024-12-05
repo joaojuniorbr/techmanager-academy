@@ -1,7 +1,10 @@
+import { Hero } from '../../@components';
+
 export const HomePage = () => {
 	return (
-		<section>
+		<>
+			<Hero />
 			<div className='container'>Conteúdo da Home</div>
-		</section>
+		</>
 	);
 };
