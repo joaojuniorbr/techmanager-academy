@@ -99,6 +99,8 @@
 	}
 
 	.home-hero .button-default {
+		font-size: 14px;
+		padding: 0 16px;
 		width: 100%;
 	}
 }
