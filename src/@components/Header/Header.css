@@ -1,0 +1,24 @@
+.header{
+    background-color: #1c1e53;
+}
+.navbar-nav >li > a{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;  
+}
+.navbar-nav > li > a:hover{
+    color: #ffffff;
+}
+.navbar{
+    padding-top: 33px;
+}
+.navbar-toggler span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 7px 0;
+    border-radius: 2px;
+}
