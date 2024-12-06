@@ -1,24 +1,36 @@
 .header{
-    background-color: #1c1e53;
+    background-color: var(--color-primary);
+    padding: 1rem 0;
 }
-.navbar-nav >li > a{
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;  
+
+.logo img{
+    height: 24px;
 }
-.navbar-nav > li > a:hover{
-    color: #ffffff;
+
+.navigation{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    color: var(--color-white);
 }
-.navbar{
-    padding-top: 33px;
+
+.navigation a{
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: none;
 }
-.navbar-toggler span{
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 7px 0;
-    border-radius: 2px;
+
+.navigation a:hover{
+    color: var(--color-secondary);
+}
+
+.button-mobile{
+    color: var(--color-white);
+    font-size: 18px;
+    border: var(--color-white) 1px solid;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
 }
