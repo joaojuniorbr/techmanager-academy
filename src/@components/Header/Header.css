@@ -1,0 +1,36 @@
+.header{
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+}
+
+.logo img{
+    height: 24px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    color: var(--color-white);
+}
+
+.navigation a{
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    color: var(--color-secondary);
+}
+
+.button-mobile{
+    color: var(--color-white);
+    font-size: 18px;
+    border: var(--color-white) 1px solid;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
