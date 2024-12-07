@@ -5,19 +5,19 @@ export const Parceiros = () => (
 		<div className='container'>
 			<div className='row '>
 				<a href='#' className='col-md-2 col-4'>
-					<img src='/shulex.svg' alt='Shulex' />
+					<img src='/parceiros/shulex.svg' alt='Shulex' />
 				</a>
 				<a href='#' className='col-md-2 col-4'>
-					<img src='/amazon.svg' alt='Amazon' />
+					<img src='/parceiros/amazon.svg' alt='Amazon' />
 				</a>
 				<a href='#' className='col-md-2 col-4'>
-					<img src='/microsoft.svg' alt='Microsoft' />
+					<img src='/parceiros/microsoft.svg' alt='Microsoft' />
 				</a>
 				<a href='#' className='col-md-2 col-4'>
-					<img src='/udemy.svg' alt='Udemy' />
+					<img src='/parceiros/udemy.svg' alt='Udemy' />
 				</a>
 				<a href='#' className='col-md-2 col-4'>
-					<img src='/crowdstrike.svg' alt='Crowdstrike' />
+					<img src='/parceiros/crowdstrike.svg' alt='Crowdstrike' />
 				</a>
 			</div>
 		</div>
