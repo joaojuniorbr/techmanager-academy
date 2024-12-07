@@ -1,0 +1,22 @@
+.Logos_Parceiros{
+    background-color: var(--color-light);
+}
+
+a img{
+    height: auto;
+    width: auto;
+
+}
+@keyframes animacao{
+    0%{bottom: 0px;}
+    100%{bottom:4px}
+}
+a img:hover{
+    position: relative;
+    animation-name: animacao;
+    animation-duration: 1s;
+}
+.row{
+    justify-content: space-around;
+    align-items: center;
+}
