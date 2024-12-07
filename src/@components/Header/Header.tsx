@@ -8,7 +8,7 @@ export const Header = () => (
 				<div className='col'>
 					<div className='logo'>
 						<Link to='/'>
-							<img src='./TechAcademy.png' />
+							<img src='/logo.png' />
 						</Link>
 					</div>
 				</div>
