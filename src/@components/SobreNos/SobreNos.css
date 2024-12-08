@@ -1,11 +1,12 @@
 .container > p{
+    margin: 0 auto;
     text-align: center;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 600;
     line-height: 57px;
     max-width: 680px;
     padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .Info{
@@ -20,22 +21,22 @@
 }
 
 .Conteudo_info h5{
-    font-size: 18.5px;
+    font-size: 24px;
     line-height: 36px;
     font-weight: 500;
     color: var(--color-dark);
 }
 .Conteudo_info p{
-    font-size: 11px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 28px;
     font-weight: 400;
     color: var(--color-dark);
     opacity: 0.7;
 }
 
 .teste{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -47,12 +48,12 @@
 }
 
 .teste p{
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 15px;
+    line-height: 30px;
     letter-spacing: 0.005em;
     position: relative;
-    bottom: 23px;
+    bottom: 35px;
     color: var(--color-white);
     opacity: 1;
 }
