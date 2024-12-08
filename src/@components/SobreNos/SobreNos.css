@@ -4,6 +4,7 @@
     font-size: 38px;
     font-weight: 600;
     line-height: 57px;
+    letter-spacing: 0.8%;
     max-width: 680px;
     padding-top: 3rem;
     padding-bottom: 2rem;
@@ -17,7 +18,7 @@
 }
 
 .Conteudo_info{
-    margin: 24px 24px;
+    margin: 28px 24px;
 }
 
 .Conteudo_info h5{
@@ -34,20 +35,20 @@
     opacity: 0.7;
 }
 
-.teste{
+.numero_conteudo{
     width: 40px;
     height: 40px;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.teste img{
+.numero_conteudo img{
     height: 100%;
     width: 100%;
     z-index: 0;
 }
 
-.teste p{
+.numero_conteudo p{
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;

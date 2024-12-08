@@ -6,7 +6,7 @@ export const SobreNos = () => (
 		<div className="row">
 			<div className="Info col-md-3">
 				<div className="Conteudo_info">
-					<div className="teste">
+					<div className="numero_conteudo">
 						<img src="./Maskgroup.png" />
 						<p>1</p>
 					</div>
@@ -16,7 +16,7 @@ export const SobreNos = () => (
 			</div>
 			<div className="Info col-md-3">
 				<div className="Conteudo_info">
-					<div className="teste">
+					<div className="numero_conteudo">
 						<img src="./Maskgroup.png" />
 						<p>2</p>
 					</div>
@@ -26,7 +26,7 @@ export const SobreNos = () => (
 			</div>
 			<div className="Info col-md-3">
 				<div className="Conteudo_info">
-					<div className="teste">
+					<div className="numero_conteudo">
 						<img src="./Maskgroup.png" />
 						<p>3</p>
 					</div>
