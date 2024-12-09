@@ -16,7 +16,4 @@ a img:hover{
     animation-name: animacao;
     animation-duration: 1s;
 }
-.row{
-    justify-content: space-around;
-    align-items: center;
-}
+

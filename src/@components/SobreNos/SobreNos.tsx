@@ -4,7 +4,7 @@ export const SobreNos = () => (
 	<section className="container">
 		<h2>Conheça um pouco mais sobre a TechAcademy</h2>
 		<div className="row">
-			<div className="col-md-3">
+			<div className="col-md-4">
 				<div className="info">
 					<div className="conteudo-info">
 						<div className="numero-conteudo">
@@ -15,7 +15,7 @@ export const SobreNos = () => (
 					</div>				
 				</div>
 			</div>
-			<div className="col-md-3">
+			<div className="col-md-4">
 				<div className="info">
 					<div className="conteudo-info">
 						<div className="numero-conteudo">
@@ -26,7 +26,7 @@ export const SobreNos = () => (
 					</div>								
 				</div>
 			</div>
-			<div className="col-md-3">
+			<div className="col-md-4">
 				<div className="info">
 					<div className="conteudo-info">
 						<div className="numero-conteudo">
