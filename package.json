@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.62.3",
     "antd": "^5.22.3",
+    "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
+    "contentful": "^11.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.2"
