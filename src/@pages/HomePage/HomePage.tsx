@@ -1,12 +1,10 @@
-import { Hero, Parceiros,SobreNos} from '../../@components';
+import { Cursos, Hero, Parceiros, SobreNos } from '../../@components';
 
-export const HomePage = () => {
-	return (
-		<>
-			<Hero />
-			<Parceiros />
-			<SobreNos />
-			<div className='container'>Conteúdo da Home</div>
-		</>
-	);
-};
+export const HomePage = () => (
+	<>
+		<Hero />
+		<Parceiros />
+		<SobreNos />
+		<Cursos />
+	</>
+);
