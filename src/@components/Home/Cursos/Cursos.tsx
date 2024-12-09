@@ -1,11 +1,12 @@
 import { useCursos } from '../../../@hooks';
+import { CardCurso } from '../../CardCurso';
 
 import './Cursos.css';
 
 export const Cursos = () => {
-	const { data } = useCursos();
-
-	console.log(data);
+	const { data } = useCursos({
+		limit: 3,
+	});
 
 	return (
 		<section className='home-cursos'>
@@ -15,12 +16,28 @@ export const Cursos = () => {
 						<div className='col'>
 							<h2 className='title-default'>Nossos Cursos</h2>
 						</div>
-						<div className='col-auto'>
+						<div className='col-auto d-none d-md-flex'>
 							<a href='/cursos' className='button-default'>
 								Todos os Cursos
 							</a>
 						</div>
 					</div>
+				</div>
+
+				<div className='home-cursos--lista'>
+					<div className='row'>
+						{data?.items.map((item) => (
+							<div className='col-md-6 col-lg-4' key={item.id}>
+								<CardCurso item={item} />
+							</div>
+						))}
+					</div>
+				</div>
+
+				<div className='d-block d-md-none'>
+					<a href='/cursos' className='button-default block'>
+						Todos os Cursos
+					</a>
 				</div>
 			</div>
 		</section>

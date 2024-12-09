@@ -7,3 +7,14 @@
 	padding-bottom: 40px;
 	margin-bottom: 60px;
 }
+
+.home-cursos--lista .card-curso {
+	margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+	.home-cursos--titulo {
+		padding-bottom: 8px;
+		margin-bottom: 40px;
+	}
+}
