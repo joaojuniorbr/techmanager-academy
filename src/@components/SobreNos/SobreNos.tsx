@@ -2,36 +2,39 @@ import "./SobreNos.css";
 
 export const SobreNos = () => (
 	<section className="container">
-		<p>conheça um pouco mais sobre a TechAcademy</p>
+		<h2>Conheça um pouco mais sobre a TechAcademy</h2>
 		<div className="row">
-			<div className="info col-md-3">
-				<div className="conteudo-info">
-					<div className="numero-conteudo">
-						<img src="./Maskgroup.png" />
-						<p>1</p>
-					</div>
-					<h5>Kursus Gratis</h5>
-					<p>Kami menyediakan beberapa kursus gratis untuk menunjang ketersediaan pendidikan untuk masyarakat kurang mampu.</p>
-				</div>				
+			<div className="col-md-3">
+				<div className="info">
+					<div className="conteudo-info">
+						<div className="numero-conteudo">
+								1
+						</div>
+						<h5>Kursus Gratis</h5>
+						<p>Kami menyediakan beberapa kursus gratis untuk menunjang ketersediaan pendidikan untuk masyarakat kurang mampu.</p>
+					</div>				
+				</div>
 			</div>
-			<div className="info col-md-3">
-				<div className="conteudo-info">
-					<div className="numero-conteudo">
-						<img src="./Maskgroup.png" />
-						<p>2</p>
-					</div>
-					<h5>Akses Selamanya</h5>
-					<p>Semua kursus yang telah kamu daftar bisa diakses selamanya sehingga belajar kamu lebih nyaman dan tidak terburu-buru. </p>
-				</div>								
+			<div className="col-md-3">
+				<div className="info">
+					<div className="conteudo-info">
+						<div className="numero-conteudo">
+								2
+						</div>
+						<h5>Akses Selamanya</h5>
+						<p>Semua kursus yang telah kamu daftar bisa diakses selamanya sehingga belajar kamu lebih nyaman dan tidak terburu-buru. </p>
+					</div>								
+				</div>
 			</div>
-			<div className="info col-md-3">
-				<div className="conteudo-info">
-					<div className="numero-conteudo">
-						<img src="./Maskgroup.png" />
-						<p>3</p>
+			<div className="col-md-3">
+				<div className="info">
+					<div className="conteudo-info">
+						<div className="numero-conteudo">
+								3
+						</div>
+						<h5>Grup Konsultasi</h5>
+						<p>Terdapat grup konsultasi yang berguna jika kamu ingin menanyakan suatu pertanyaan  dan kamu juga bisa mebuka diskusi baru.</p>
 					</div>
-					<h5>Grup Konsultasi</h5>
-					<p>Terdapat grup konsultasi yang berguna jika kamu ingin menanyakan suatu pertanyaan  dan kamu juga bisa mebuka diskusi baru.</p>
 				</div>
 			</div>			
 		</div>		
