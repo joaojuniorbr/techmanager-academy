@@ -13,6 +13,53 @@
 	display: block;
 }
 
+.card-curso--image a {
+	animation: none;
+	background-color: var(--color-dark);
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.card-curso--image a span {
+	align-items: center;
+	color: var(--color-white);
+	display: flex;
+	font-size: 12px;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	line-height: normal;
+	padding: 8px 16px;
+	pointer-events: none;
+	position: absolute;
+	text-transform: uppercase;
+	transform: translateY(-100%);
+	top: 0;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	opacity: 0;
+	z-index: 5;
+}
+
+.card-curso--image a img {
+	transition: all 0.3s ease-in-out;
+}
+
+.card-curso--image a img:hover {
+	animation: none;
+}
+
+.card-curso--image a:hover span {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.card-curso--image a:hover img {
+	transform: scale(1.3);
+	opacity: 0.2;
+}
+
 .cart-curso--rate {
 	align-items: center;
 	background-color: var(--color-primary);
