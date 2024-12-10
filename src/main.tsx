@@ -19,7 +19,13 @@ const queryClient = new QueryClient();
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<QueryClientProvider client={queryClient}>
-			<ConfigProvider>
+			<ConfigProvider
+				theme={{
+					token: {
+						fontFamily: 'Poppins, sans-serif',
+					},
+				}}
+			>
 				<App>
 					<BrowserRouter>
 						<Routes>
