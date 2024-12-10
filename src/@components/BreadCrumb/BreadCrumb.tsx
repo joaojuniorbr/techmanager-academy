@@ -8,7 +8,7 @@ interface BreadCrumbProps extends React.PropsWithChildren {
 }
 
 export const BreadCrumb = ({ items, ...props }: BreadCrumbProps) => (
-	<div className='breadcrumb' {...props}>
+	<div className='breadcrumb-tm' {...props}>
 		<div className='container'>
 			<ul>
 				<li>
