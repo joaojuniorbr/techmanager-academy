@@ -1,4 +1,4 @@
-.breadcrumb {
+.breadcrumb-tm {
 	background-color: var(--color-light);
 	color: var(--color-dark);
 	font-size: 16px;
@@ -7,38 +7,38 @@
 	padding: 30px 0;
 }
 
-.breadcrumb ul {
+.breadcrumb-tm ul {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 }
 
-.breadcrumb ul li {
+.breadcrumb-tm ul li {
 	display: flex;
 	align-items: center;
 }
 
-.breadcrumb ul li:last-child {
+.breadcrumb-tm ul li:last-child {
 	font-weight: bold;
 }
 
-.breadcrumb ul li.separator {
+.breadcrumb-tm ul li.separator {
 	margin: 0 8px;
 }
 
-.breadcrumb ul li a {
+.breadcrumb-tm ul li a {
 	color: var(--color-dark);
 	text-decoration: none;
 }
 
-.breadcrumb ul li a:hover {
+.breadcrumb-tm ul li a:hover {
 	color: var(--color-primary);
 	text-decoration: underline;
 }
 
 @media (max-width: 767px) {
-	.breadcrumb {
+	.breadcrumb-tm {
 		padding: 20px 0;
 		font-size: 14px;
 	}

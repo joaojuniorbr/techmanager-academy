@@ -1,0 +1,8 @@
+.logos-parceiros {
+	background-color: var(--color-light);
+}
+.logos-parceiros a:hover {
+	transform: translateY(-10px);
+}
+
+
