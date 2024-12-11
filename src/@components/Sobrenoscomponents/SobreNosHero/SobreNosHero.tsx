@@ -2,6 +2,14 @@ import './SobreNosHero.css';
 
 export const SobreNosHero = () => (
 	<section className="hero-sobre-nos">
-		<h1 className='container'>Sobre Nós</h1>
+		<div className='cover'></div>
+
+		<div className="hero-sobre-nos-titulo">
+		<div className='container'>
+			<h1>
+			Sobre Nós
+			</h1>
+		</div>
+		</div>
 	</section>
 );

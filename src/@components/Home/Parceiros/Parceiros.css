@@ -1,18 +1,8 @@
 .logos-parceiros {
 	background-color: var(--color-light);
 }
+.logos-parceiros a:hover {
+	transform: translateY(-10px);
+}
 
-@keyframes animacao {
-	0% {
-		bottom: 0px;
-	}
-	100% {
-		bottom: 4px;
-	}
-}
-.logos-parceiros a img:hover {
-	position: relative;
-	animation-name: animacao;
-	animation-duration: 600ms;
-}
 
