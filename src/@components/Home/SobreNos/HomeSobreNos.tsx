@@ -1,4 +1,4 @@
-import "./SobreNos.css";
+import "./HomeSobreNos.css";
 
 export const SobreNos = () => (
 	<section className="container">

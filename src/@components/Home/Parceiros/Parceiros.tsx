@@ -1,7 +1,7 @@
 import './Parceiros.css';
 
 export const Parceiros = () => (
-	<section className='Logos_Parceiros'>
+	<section className='logos-parceiros'>
 		<div className='container'>
 			<div className='row align-items-center justify-content-center'>
 				<a href='#' className='col-md-2 col-4'>
