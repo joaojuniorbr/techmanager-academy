@@ -6,7 +6,6 @@
 }
 
 .oquefazemos p{
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 27.2px;
@@ -25,7 +24,6 @@
     margin: 0px;
 }
 .valores li{
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 27.2px;
@@ -34,7 +32,6 @@
 }
 
 .chamada-acao{
-    font-family: Poppins;
     font-size: 35px;
     font-weight: 600;
     line-height: 67.2px;
