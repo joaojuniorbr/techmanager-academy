@@ -1,0 +1,41 @@
+.oquefazemos{
+    margin-top: 64px;
+}
+.oquefazemos h2{
+    margin-bottom: 12px;
+}
+
+.oquefazemos p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: left;
+    color: var(--color-dark);
+}
+
+.imgconteudo{
+    width: 100%;
+    margin: 50px 0;
+    border-radius: 5px;
+}
+
+.valores ul{
+    padding: 0px;
+    margin: 0px;
+}
+.valores li{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: left;
+    list-style: none;
+}
+
+.chamada-acao{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 67.2px;
+    text-align: center; 
+    margin-top: 69px;
+    margin-bottom: 108px;
+}
