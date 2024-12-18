@@ -1,36 +1,45 @@
 .testemunho{
-    width: 100%;
-    min-height: 367px;
-    width: auto;
     background-color: var(--color-light);
-    margin-top: 143px;
+    padding: 80px 0;
 }
-.testemunho-container{
-    margin-top: 83px;
-}
+
 .fala-testemunho{
-font-size: 26px;
-font-weight: 500;
-line-height: 36.4px;
-text-align: justify;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36.4px;
 }
+
 .foto-testemunho{
     width: 52px;
     height: 52px;
-    background-image: url(/Imagem_pessoa.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
 .teste{
     background-color: red;
 }
+
 .lista-testemunho{
     width: 16px;
     height: 16px;
     background-color: var(--color-dark);
     opacity: 0.4;
+    display: inline-block;
 }
+
 .lista-testemunho.ativo{
     opacity: 1;
+}
+
+@media (max-width:768px){
+    .fala-testemunho{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .testemunho{
+        text-align: center;
+        padding: 60px 24px;
+    }
+    .lista-testemunho{
+        margin-top: 40px;
+    }
 }
