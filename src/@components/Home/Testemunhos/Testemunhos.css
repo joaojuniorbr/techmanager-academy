@@ -1,0 +1,36 @@
+.testemunho{
+    width: 100%;
+    min-height: 367px;
+    width: auto;
+    background-color: var(--color-light);
+    margin-top: 143px;
+}
+.testemunho-container{
+    margin-top: 83px;
+}
+.fala-testemunho{
+font-size: 26px;
+font-weight: 500;
+line-height: 36.4px;
+text-align: justify;
+}
+.foto-testemunho{
+    width: 52px;
+    height: 52px;
+    background-image: url(/Imagem_pessoa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teste{
+    background-color: red;
+}
+.lista-testemunho{
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-dark);
+    opacity: 0.4;
+}
+.lista-testemunho.ativo{
+    opacity: 1;
+}

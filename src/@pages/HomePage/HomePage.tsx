@@ -1,4 +1,4 @@
-import { Cursos, Hero, Parceiros, SobreNos } from '../../@components';
+import { Cursos, Hero, Parceiros, SobreNos,Testemunhos } from '../../@components';
 
 export const HomePage = () => (
 	<>
@@ -6,5 +6,6 @@ export const HomePage = () => (
 		<Parceiros />
 		<SobreNos />
 		<Cursos />
+		<Testemunhos />
 	</>
 );
