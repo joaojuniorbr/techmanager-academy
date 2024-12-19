@@ -12,16 +12,13 @@
 .foto-testemunho{
     width: 52px;
     height: 52px;
-}
-
-.teste{
-    background-color: red;
+    object-fit: cover;
 }
 
 .lista-testemunho{
     width: 16px;
     height: 16px;
-    background-color: var(--color-dark);
+    background-color: var(--color-alternate);
     opacity: 0.4;
     display: inline-block;
 }
