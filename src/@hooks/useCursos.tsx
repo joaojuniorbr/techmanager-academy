@@ -9,11 +9,13 @@ const contentfullClient = createClient({
 interface UseCursosProps {
 	limit?: number;
 	imageSize?: { width: number; height: number };
+	page?: number;
 }
 
 const useCursosDefaultProps: UseCursosProps = {
 	limit: 10,
 	imageSize: { width: 600, height: 400 },
+	page: 1,
 };
 
 interface CursoDescription {
@@ -38,7 +40,7 @@ const parseImage = (image: CursoImage, width?: number, height?: number) => {
 	let params = '';
 
 	if (width && height) {
-		params = `?w=${width}&h=${height}`;
+		params = `?w=${width}&h=${height}&fit=fill`;
 	}
 
 	return image.fields.file.url + params;
@@ -58,19 +60,22 @@ export interface CursoInterface {
 export const useCursos = ({
 	limit,
 	imageSize,
+	page,
 }: UseCursosProps = useCursosDefaultProps) =>
 	useQuery<{
 		items: CursoInterface[];
 		total: number;
 		skip: number;
 	}>({
-		queryKey: ['cursos'],
+		queryKey: ['cursos', page],
 		queryFn: async () => {
+			console.log((limit || 0) * (page || 0));
 			const { items, total, skip } =
 				await contentfullClient.getEntries<EntrySkeletonType>({
 					content_type: 'title',
 					limit,
 					order: `-fields.datetime`,
+					skip: (limit || 0) * (page || 0),
 				} as EntriesQueries<EntrySkeletonType, undefined>);
 
 			const data = items.map((item) => {

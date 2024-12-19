@@ -4,14 +4,18 @@ import { CursoInterface } from '../../@hooks';
 import './CardCurso.css';
 import { message } from 'antd';
 
-export const CardCurso = ({ item }: { item: CursoInterface }) => {
+interface CardCursoProps extends React.HTMLAttributes<HTMLDivElement> {
+	item: CursoInterface;
+}
+
+export const CardCurso = ({ item, className, ...props }: CardCursoProps) => {
 	const handleClick = (event: React.MouseEvent) => {
 		event.preventDefault();
 		message.success('Esta página ainda está em desenvolvimento');
 	};
 
 	return (
-		<div className='card-curso'>
+		<div className={`card-curso ${className || ''}`} {...props}>
 			<div className='card-curso--image'>
 				<a href='#' onClick={handleClick}>
 					<span>Saiba Mais sobre o Curso</span>
