@@ -1,15 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
-import { createClient, EntriesQueries, EntrySkeletonType } from 'contentful';
-
-const contentfullClient = createClient({
-	space: import.meta.env.VITE_APP_CONTENTFUL_SPACE_ID,
-	accessToken: import.meta.env.VITE_APP_CONTENTFUL_ACCESS_TOKEN,
-});
+import { EntriesQueries, EntrySkeletonType } from 'contentful';
+import { api } from '../@common';
 
 interface UseCursosProps {
 	limit?: number;
 	imageSize?: { width: number; height: number };
 	page?: number;
+	query?: string;
+	tag?: string;
 }
 
 const useCursosDefaultProps: UseCursosProps = {
@@ -61,22 +59,24 @@ export const useCursos = ({
 	limit,
 	imageSize,
 	page,
+	query,
+	tag,
 }: UseCursosProps = useCursosDefaultProps) =>
 	useQuery<{
 		items: CursoInterface[];
 		total: number;
 		skip: number;
 	}>({
-		queryKey: ['cursos', page],
+		queryKey: ['cursos', page, limit, query],
 		queryFn: async () => {
-			console.log((limit || 0) * (page || 0));
-			const { items, total, skip } =
-				await contentfullClient.getEntries<EntrySkeletonType>({
-					content_type: 'title',
-					limit,
-					order: `-fields.datetime`,
-					skip: (limit || 0) * (page || 0),
-				} as EntriesQueries<EntrySkeletonType, undefined>);
+			const { items, total, skip } = await api.getEntries<EntrySkeletonType>({
+				query,
+				content_type: 'title',
+				limit,
+				order: `-fields.datetime`,
+				'fields.category': tag,
+				skip: (limit || 0) * (page || 0),
+			} as EntriesQueries<EntrySkeletonType, undefined>);
 
 			const data = items.map((item) => {
 				return {

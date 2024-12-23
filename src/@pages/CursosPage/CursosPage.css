@@ -1,3 +1,73 @@
+.search-cursos {
+	padding: 80px 0;
+}
+
+.search-cursos-input {
+	position: relative;
+}
+
+.search-cursos-input input {
+	border-radius: 8px;
+	border: 1px solid var(--color-dark);
+	color: var(--color-dark);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: normal;
+	padding: 16px 24px;
+	width: 100%;
+}
+
+.search-cursos-tags {
+	padding-top: 24px;
+	text-align: center;
+}
+
+.search-cursos-tags button {
+	background: transparent;
+	border: none;
+	color: var(--color-dark);
+	display: inline-block;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: normal;
+	margin: 8px 16px;
+	padding: 0;
+	text-decoration: none;
+}
+
+.search-cursos-tags button.active {
+	color: var(--color-primary);
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.search-cursos {
+		padding: 32px 0 24px;
+	}
+
+	.search-cursos-input input {
+		border-radius: 4px;
+		padding: 16px;
+		font-size: 14px;
+	}
+
+	.search-cursos-tags {
+		white-space: nowrap;
+		text-align: left;
+		overflow: auto;
+		padding: 16px 0;
+	}
+
+	.search-cursos-tags button {
+		font-size: 14px;
+		margin: 0 0 0 24px;
+	}
+
+	.search-cursos-tags button:first-child {
+		margin: 0;
+	}
+}
+
 .list-cursos .ant-pagination {
 	justify-content: center;
 	margin-top: 80px;
