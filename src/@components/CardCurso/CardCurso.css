@@ -115,3 +115,15 @@
 .card-curso--highlight i {
 	font-size: 24px;
 }
+
+@media (max-width: 767px) {
+	.card-curso--description h3 {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.card-curso--description p {
+		font-size: 12px;
+		line-height: 1.4;
+	}
+}
