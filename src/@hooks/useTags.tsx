@@ -11,6 +11,6 @@ export const useTags = () =>
 
 			return Array.from(
 				new Set(items.flatMap((item) => item.fields.category as string[]))
-			).sort();
+			);
 		},
 	});
