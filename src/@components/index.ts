@@ -5,5 +5,6 @@ export * from './Header';
 export * from './Home';
 export * from './MainLayout';
 export * from './SobreNos';
+export * from './Contato';
 
 

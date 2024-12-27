@@ -1,0 +1,13 @@
+.contato-conteudo{
+    color: var(--color-dark);
+    margin: 98px 0 86px 0;
+}
+.conteudo-texto{
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 27.2px;
+    font-weight: 500;
+}
+.conteudo-texto b{
+    font-weight: 700;
+}
