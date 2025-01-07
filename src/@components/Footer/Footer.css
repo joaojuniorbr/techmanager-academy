@@ -1,0 +1,24 @@
+.footer {
+    background-color: var(--color-primary);
+}
+
+.social-nav a{
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 8px;
+    color: var(--color-white);
+}
+
+.social-nav a:hover , .sobrenos-ul a:hover {
+    color: var(--color-secondary);
+}
+
+.sobrenos-ul a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+
+.politica-div a {
+    text-decoration: none;
+}
