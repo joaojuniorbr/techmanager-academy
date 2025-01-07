@@ -21,7 +21,8 @@
   
   .form-conteudo {
     color: var(--color-white);
-    margin: 75px 101px 0 101px;
+    margin: 75px auto;
+    max-width: fit-content;
   }
   
   .form-conteudo p {
@@ -43,21 +44,21 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: #f4f6fc; /* Texto visível */
+    color: var(--color-light); 
   }
   
   .custom-input:focus {
     background-color: inherit;
-    outline: none;
+    outline: auto;
     opacity: 1;
   }
 
   .custom-input:invalid{
-    color: black;
+    color: var(--color-dark);
   }
   
   .custom-input::placeholder {
-    color: #f4f6fc;
+    color: var(--color-light);
     opacity: 1;
   }
   
@@ -70,7 +71,6 @@
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    line-height: 27px;
     margin-top: 40px;
     border: none;
     cursor: pointer;
@@ -82,9 +82,4 @@
     color: var(--color-white);
   }
   
-  @media (max-width: 768px) {
-    .form-conteudo {
-      margin: 75px 10% 0 10%;
-    }
-  }
   
