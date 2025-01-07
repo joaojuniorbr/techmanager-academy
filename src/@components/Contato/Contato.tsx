@@ -2,7 +2,11 @@ import './Contato.css';
 import { Form, Input } from 'antd';
 
 export const Contato = () => {
-  const onFinish = (values) => {
+  const onFinish = (values:{
+    nome:string;
+    email:string;
+    telefone:string;
+  }) => {
     const { nome, email, telefone } = values;
     const mensagem = `Olá! Meu nome é ${nome}, meu e-mail é ${email}, e meu telefone é ${telefone}`;
     window.open(`https://wa.me/5551999999999?text=${encodeURIComponent(mensagem)}`);
