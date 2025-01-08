@@ -34,3 +34,11 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.nav-mobile a {
+	display: block;
+	margin: 0 0 24px;
+	color: var(--color-primary);
+	font-size: 18px;
+	text-decoration: none;
+}
