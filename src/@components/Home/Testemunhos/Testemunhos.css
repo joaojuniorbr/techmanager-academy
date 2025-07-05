@@ -21,6 +21,8 @@
     background-color: var(--color-alternate);
     opacity: 0.4;
     display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .lista-testemunho.ativo{
