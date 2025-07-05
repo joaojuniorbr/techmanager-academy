@@ -5,7 +5,7 @@ import './Cursos.css';
 
 export const Cursos = () => {
 	const { data } = useCursos({
-		limit: 3,
+		limit: 6
 	});
 
 	return (
@@ -26,7 +26,7 @@ export const Cursos = () => {
 
 				<div className='home-cursos--lista'>
 					<div className='row'>
-						{data?.items.map((item) => (
+						{data?.map((item) => (
 							<div className='col-md-6 col-lg-4' key={item.id}>
 								<CardCurso item={item} />
 							</div>
