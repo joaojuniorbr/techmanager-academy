@@ -23,6 +23,7 @@ createRoot(document.getElementById('root')!).render(
 				theme={{
 					token: {
 						fontFamily: 'Poppins, sans-serif',
+						colorPrimary: '#1c1e53',
 					},
 				}}
 			>

@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { EntriesQueries, EntrySkeletonType } from 'contentful';
-import { api } from '../@common';
+import { apiContentful } from '../@common';
 
 interface UseCursosProps {
 	limit?: number;
@@ -69,14 +69,15 @@ export const useCursos = ({
 	}>({
 		queryKey: ['cursos', page, limit, query],
 		queryFn: async () => {
-			const { items, total, skip } = await api.getEntries<EntrySkeletonType>({
-				query,
-				content_type: 'title',
-				limit,
-				order: `-fields.datetime`,
-				'fields.category': tag,
-				skip: (limit || 0) * (page || 0),
-			} as EntriesQueries<EntrySkeletonType, undefined>);
+			const { items, total, skip } =
+				await apiContentful.getEntries<EntrySkeletonType>({
+					query,
+					content_type: 'title',
+					limit,
+					order: `-fields.datetime`,
+					'fields.category': tag,
+					skip: (limit || 0) * (page || 0),
+				} as EntriesQueries<EntrySkeletonType, undefined>);
 
 			const data = items.map((item) => {
 				return {

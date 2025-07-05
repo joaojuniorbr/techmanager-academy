@@ -1,11 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
-import { api } from '../@common';
+import { apiContentful } from '../@common';
 
 export const useTags = () =>
 	useQuery<string[]>({
 		queryKey: ['tags'],
 		queryFn: async () => {
-			const { items } = await api.getEntries({
+			const { items } = await apiContentful.getEntries({
 				content_type: 'title',
 			});
 
