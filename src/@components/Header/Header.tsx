@@ -68,6 +68,9 @@ export const Header = () => {
 					<Link to='/sobre-nos'>SOBRE NÓS</Link>
 					<Link to='/cursos'>CURSOS</Link>
 					<Link to='/contato'>CONTATO</Link>
+					<button className='button-default' onClick={toggleLogin}>
+						{labelAuth}
+					</button>
 				</nav>
 			</Drawer>
 
